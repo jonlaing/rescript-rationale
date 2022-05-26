@@ -1,22 +1,20 @@
 {
-  "name": "rationale",
+  "name": "rescript-rationale",
   "version": "0.2.0",
-  "description": "Rationale is a collection of helper utility functions that are absent in the OCaml/ReasonML standard library.",
+  "description": "Small extensions to Rescript stdlib inspired by RamdaJS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonlaing/rationale"
+    "url": "https://github.com/jonlaing/rescript-rationale"
   },
   "scripts": {
-    "build": "bsb -clean-world -make-world",
-    "watch": "bsb -clean-world -make-world -w",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
+    "build": "rescript build",
+    "watch": "rescript build -w",
+    "clean": "rescript clean",
     "test": "yarn build && jest",
     "watch:test": "jest --watchAll"
   },
   "keywords": [
-    "BuckleScript",
-    "ReasonML",
+    "Rescript",
     "Ramda",
     "Lodash",
     "Monad"
@@ -24,7 +22,8 @@
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.8",
-    "bs-platform": "^5.0.4"
+    "bs-platform": "^5.0.4",
+    "rescript": "9"
   },
   "dependencies": {},
   "jest": {
